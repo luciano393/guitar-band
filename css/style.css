@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+:root {
+  --main-color: #de3139;
+  --black: #2b2b2b;
+  --gray: #747474;
+  --gray-light: #e8e9ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: .7rem 1.5rem;
+  border-radius: .5rem;
+  font-weight: bold;
+}
+
+.outline {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.outline:hover {
+  color: #ffffff;
+  background-color: var(--main-color);
+  border: var(--main-color);
+}
+
+.primary {
+  color: #ffffff;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.primary:hover {
+  background-color: #ef424a;
+}
+
+section {
+  padding: 72px 0;
+}
+
+header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .box-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .box-numbers ion-icon {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 50%;
+  padding: .7rem;
+  margin-right: 1rem;
+}
+
+header .box-numbers span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .box-numbers span a {
+  color: var(--gray);
+  margin: .1rem;
+}
+
+header .box-addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .box-addres ion-icon {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 50%;
+  padding: .7rem;
+  margin-right: 1rem;
+}
+
+header .box-addres span {
+  max-width: 16rem;
+}
+
+header .box-addres span a {
+  color: var(--gray);
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  padding: 1.3rem 0;
+  margin-right: 3rem;
+}
+
+nav ul a {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 3.2rem;
+}
+
+nav ul a:hover {
+  color: var(--main-color);
+}
+
+nav ion-icon {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+nav ion-icon:hover {
+  color: var(--main-color);
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container .mySlide {
+  display: none;
+}
+
+.slideshow-container .mySlide img {
+  width: 100%;
+  max-height: 90vh;
+}
+
+.slideshow-container .text-content {
+  position: absolute;
+  top: 5rem;
+  left: 6rem;
+  max-width: 40rem;
+}
+
+.slideshow-container .text-content h1 {
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  color: #ffffff;
+  letter-spacing: .5rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.slideshow-container .text-content .numbers {
+  margin-top: 5rem;
+}
+
+.slideshow-container .text-content .numbers .dot {
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 8px;
+  margin: 0 5px;
+  color: #ffffff;
+  border-radius: 45%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.slideshow-container .text-content .numbers .dot:hover {
+  background-color: var(--main-color);
+}
+
+.slideshow-container .text-content .numbers .active {
+  background-color: var(--main-color);
+}
+
+.slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-1 .row {
+  padding: 0 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-1 .row .img-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.section-1 .row .img-container img {
+  width: 90%;
+}
+
+.section-1 .row .text-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+  padding: 0 2rem;
+}
+
+.section-1 .row .text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.section-1 .row .text-container p {
+  color: var(--gray);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.section-2 {
+  padding: 2rem 6rem;
+  background-color: var(--gray-light);
+}
+
+.section-2 h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 2rem 0;
+}
+
+.section-2 .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+
+.section-2 .box-container .box {
+  text-align: center;
+}
+
+.section-2 .box-container .box img {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-2 .box-container .box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-2 .box-container .box p {
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+/*# sourceMappingURL=style.css.map */
